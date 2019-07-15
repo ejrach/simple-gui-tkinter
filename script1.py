@@ -18,8 +18,11 @@ def kg_conversion():
     grams = float(kg_e_value.get())*1000
     pounds = float(kg_e_value.get())*2.20462
     ounces = float(kg_e_value.get())*35.274
+    tbGrams.delete("1.0",END)
     tbGrams.insert(END,grams)
+    tbPounds.delete("1.0",END)
     tbPounds.insert(END, pounds)
+    tbOunces.delete("1.0",END)
     tbOunces.insert(END, ounces)
 
 # create a label widget, and tell it "which container" to be displayed
